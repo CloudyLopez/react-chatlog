@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import chatMessages from './data/messages.json';
+import Messages from './data/messages.json';
 import Chatlog from './components/Chatlog';
 
 const App = () => {
-  console.log(chatMessages);
+  console.log(Messages);
 
   return (
     <div className="App">
@@ -12,7 +12,7 @@ const App = () => {
         <h1 className="App-title">WeBeChattin</h1>
       </header>
       <main className="App-main">
-      <Chatlog messages={ chatMessages } />
+      <Chatlog messages={ Messages } />
       </main>
     </div>
   );
