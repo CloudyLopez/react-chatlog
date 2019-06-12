@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(203, 189, 210);
   padding-bottom: 0.5rem;
   color: white;
   position: fixed;
@@ -44,14 +44,14 @@
 
   padding: 1rem 1rem 0.1rem 1rem;
 
-  background-color: lightyellow;
+  background-color: rgb(204, 214, 255);
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
 }
 
 .entry-bubble:hover {
-  background-color: #fefea2;
+  background-color: #a2d6fe;
 }
 
 .entry-name {
@@ -85,7 +85,7 @@
   right: auto;
   bottom: auto;
 
-  border: 22px solid;
+  /* border: 22px solid; */
 }
 
 /* "local" messages are shown on the left side */
@@ -100,11 +100,11 @@
 .chat-entry.local .entry-bubble:before {
   left: -33px;
 
-  border-color: lightyellow transparent transparent transparent;
+  border-color: rgb(252, 252, 252) transparent transparent transparent;
 }
 
 .chat-entry.local .entry-bubble:hover:before {
-  border-color: #fefea2 transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
 }
 
 /* "remote" messages are shown on the right side, in blue */

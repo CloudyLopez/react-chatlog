@@ -1,21 +1,26 @@
 import React from 'react';
-import Timestamp from './Timestamp';
-import Messages from './Messages';
+import Message from './Message';
+import PropTypes from 'prop-types'
 
-const messageData = (props) => {
-  return props.messages.map((post) => {
+const messageData = (messages) => {
+  return messages.map((post) => {
     return (
-      <Messages sender={ post.sender } body={ post.body } timestamp={ post.timeStamp } />
+      <Message sender={ post.sender } 
+                body={ post.body } 
+                timestamp={ post.timeStamp } />
       )
     })
   }
-
+  
   const Chatlog = (props) => {
-  return (
-    <section>
-      { messageData(props) } 
-    </section>
-  )
-}
+    return (
+      <section class="chat-log">
+        { messageData(props.messages) } 
+      </section>
+    )
+  } 
+  Chatlog.propTypes = {
+    messages: PropTypes.array
+  }
 
 export default Chatlog;

@@ -13,7 +13,7 @@ const App = () => {
       </header>
       <main className="App-main">
       <Chatlog messages={ Messages } />
-      </main>
+      </main> 
     </div>
   );
 };
